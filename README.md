@@ -2,7 +2,8 @@
 En la empresa "Super Zapatos" ocupan realizar una aplicación web para llevar el control de inventario del calzado disponible en su zapatería. Dada esta necesidad, los expertos de tecnología de la empresa consideraron que la mejor opción sería hacer una aplicación ASP.Net utilizando MVC. El cliente desea que las paginas se ajusten al dispositivo que la está mostrando (Mobil, Tablet, PC). Esta se encargara de mostrar la información y un backend enviara la información a la base de datos, mediante servicios web. Además esta aplicación debería de permitir a los administradores de la empresa poder agregar la información en la base de datos.
 Dada la necesidad anteriormente planteada, se consultó a un experto de base de datos y él recomendó tener una base de datos compleja para lograr el proyecto. Sin embargo, como el presupuesto del cliente era limitado, se concluyó que la mejor opción era tener únicamente el mantenimiento y los servicios esenciales de la aplicación, lo que implicaba únicamente tener dos tablas básicas, cuyas descripciones son:
 
-#table articles      
+#table articles   
+
 id                  
 name
 description         
@@ -12,6 +13,7 @@ total_in_vault
 store_id	
 
 #table stores
+
 id
 name
 address
