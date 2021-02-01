@@ -4,63 +4,81 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Detalle</h2>
 
-<div>
-    <h4>Articles</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Stores.Name)
-        </dt>
+<div class="row">
+    <div class="col-lg-6">
+        <div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Stores.Name)
-        </dd>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Stores.Name)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Stores.Name)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Total_in_shelf)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Total_in_shelf)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Total_in_shelf)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Total_in_vault)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Total_in_shelf)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Total_in_vault)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Total_in_vault)
+                </dt>
 
-    </dl>
+                <dd>
+                    @Html.DisplayFor(model => model.Total_in_vault)
+                </dd>
+
+            </dl>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="d-grid gap-2">
+                    <a type="button" class="btn btn-secondary btn-lg" href="@Url.Action("Index","Articles")">Regresar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-grid gap-2">
+                    <a type="button" class="btn btn-warning btn-lg" href="@Url.Action("Edit","Articles", new { id = Model.ArticleID })">Editar</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="col-lg-6">
+
+    </div>
+
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ArticleID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
