@@ -10,6 +10,7 @@ price
 total_in_shelf
 total_in_vault
 store_id	
+
 #table stores
 id
 name
